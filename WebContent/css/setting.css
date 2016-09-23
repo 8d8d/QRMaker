@@ -98,5 +98,7 @@ table,thead,tbody,th,td,tr{
 	font-family: "宋体";
 	font-weight:bold;
 }
-
+#page-wrapper .steps h3{
+	border-bottom-color: #bacaca;
+}
 
