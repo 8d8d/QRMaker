@@ -55,6 +55,11 @@
 
 	form textarea {
 		min-height: 8em;
+		margin-left: 15px;
+		margin-right: 20px;
+		resign:none; 
+		max-width: 97.5%;
+
 	}
 	form .formerize-placeholder,
 	form ::-webkit-input-placeholder,
@@ -110,6 +115,8 @@
 		height: 5em;
 		line-height: 5em;
 		margin: 0;
+		margin-left: -30px;
+		margin-right: -30px;
 		background: #39454b;
 		color: #999;
 		color: rgba(185, 186, 187, 0.5);
@@ -152,6 +159,8 @@ article{
 #intro {
 	/*background-color:#adeef7;*/
 	background-image: url(../img/bgimg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 	padding-top: 10px;
 	margin-top: -20px;
 
@@ -166,7 +175,11 @@ article{
 #user{
 	font-size: 1.9em;
 }
-
+#page-wrapper .row {
+	padding: 0px;
+	margin-left: -45px;
+	margin-right: -45px;
+}
 
 .calendar { 
 	width: 160px; 
