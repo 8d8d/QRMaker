@@ -12,6 +12,8 @@ form input[type="submit"] {
 }
 #page-wrapper{
 	background-color: #e5ecec;
+	background-image: url(../img/user2.png);
+	background-size: cover;
 }
 
 table{
@@ -48,7 +50,7 @@ table,thead,tbody,th,td,tr{
 		-webkit-transition: all 0.2s ease-in-out;
 		-ms-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
-		background-color: #98c593;
+		/*background-color: #98c593;*/
 		border: 0;
 		border-radius: 3.5em;
 		color: white;
@@ -79,8 +81,8 @@ table,thead,tbody,th,td,tr{
 #page-wrapper .save:hover{
   background-color: #449f4f;
 }
-#page-wrapper .cancel{
-	background-color:#bec1bf;
+#page-wrapper .cancel {
+	background-color:#babebf;
 }
 #page-wrapper .cancel:hover{
   background-color:#9f989a;
@@ -97,6 +99,4 @@ table,thead,tbody,th,td,tr{
 	font-weight:bold;
 }
 
-.steps {
-	
-}
+
