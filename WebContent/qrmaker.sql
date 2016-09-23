@@ -6,6 +6,7 @@ CREATE TABLE `tb_box` (
   PRIMARY KEY (`AUTO_ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
+
 CREATE TABLE `tb_bottle` (
   `AUTO_ID` int(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '×ÔÔöid',
   `ID` int(20) unsigned NOT NULL COMMENT 'Ò©Æ¿±àºÅ',
