@@ -1,0 +1,102 @@
+#top{
+	background-color: #bacaca;
+}
+#top p{
+	font-size: 1.5em;
+	color:black;
+}
+form input[type="submit"] {
+	position: relative;
+	padding-left:50%;
+	
+}
+#page-wrapper{
+	background-color: #e5ecec;
+}
+
+table{
+	background-color: #eae7e7;
+	border:solid 2px green; 
+}
+th{
+	background-color: #7b8b8a;
+	color:black;
+}
+table,thead,tbody,th,td,tr{
+	border:solid 2px #ccc3c3;
+}
+/*caption{
+	font-size: 1.5em;
+	color: black;
+}*/
+#page-wrapper input[type="submit"]  {
+  /*line-height:40px;*/
+/*  height:35px;
+  width:65px;
+  color:#817979;
+  background-color:#ccc2a6;
+  font-size:16px;
+  font-weight:normal;
+  font-family:Arial;*/ 
+/*  border-radius:20px;*/
+         margin-left: 100px;
+        -moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		background-color: #98c593;
+		border: 0;
+		border-radius: 3.5em;
+		color: white;
+		cursor: pointer;
+		display: inline-block;
+		height: 2.1em;
+		line-height: 2.0em;
+		outline: 0;
+		padding: 0 1.4em 0 1.4em;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+/*		margin-left: 45%;
+		margin-bottom: 15px;
+		margin-top: 10px;*/
+		font-size:1.1em;
+}
+
+#page-wrapper .edit {
+	background-color:#98c593 ;
+}
+#page-wrapper .edit:hover{
+  background-color:#449f4f;
+}
+#page-wrapper .save {
+	background-color:#98c593;
+}
+#page-wrapper .save:hover{
+  background-color: #449f4f;
+}
+#page-wrapper .cancel{
+	background-color:#bec1bf;
+}
+#page-wrapper .cancel:hover{
+  background-color:#9f989a;
+}
+.page-header{
+	color:black;
+	font-family: ；
+	font-weight:bold;
+	border-bottom-color: #bacaca; 
+}
+#page-wrapper h1{
+	color:black;
+	font-family: "宋体";
+	font-weight:bold;
+}
+
+.steps {
+	
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定Hibernate映射文件的DTD信息 -->
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Hibernate映射文件的根元素 -->
+<hibernate-mapping package="com.kesheng.QRMaker.domain">
+	<class name="QRPicture" table="qrpicture"
+		discriminator-value="1">
+		<!-- 使用只读缓存 -->
+		<cache usage="read-only"/>
+		<!-- 映射标识属性 -->
+		<id	name="autoid" type="integer" column="autoid">
+			<!-- 指定使用identity主键生成策略 -->
+			<generator class="identity"/>
+		</id>
+		<!-- 映射普通属性 -->
+		<property name="width" column="width" type="integer" 
+			not-null="true" />
+		<property name="height" column="height" type="integer" 
+			not-null="true" />
+		<property name="pagepath" column="pagepath" type="string" 
+			not-null="true" length="100" />
+		<property name="fixedtext" column="fixedtext" type="string" 
+			not-null="true" length="300" />
+		
+		<!-- 映射和Plan之间的关联关系 -->
+		<many-to-one name="plan" column="plan_id" class="Plan" 
+			not-null="true" lazy="false"/>
+
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定Hibernate映射文件的DTD信息 -->
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Hibernate映射文件的根元素 -->
+<hibernate-mapping package="com.kesheng.QRMaker.domain">
+	<class name="Product" table="tb_bottle"
+		discriminator-value="1">
+		<!-- 使用只读缓存 -->
+		<cache usage="read-only"/>
+		<!-- 映射标识属性 -->
+		<id	name="autoid" type="integer" column="AUTO_ID">
+			<!-- 指定使用identity主键生成策略 -->
+			<generator class="identity"/>
+		</id>
+		<!-- 映射普通属性 -->
+		<property name="id" column="ID"	type="integer" 
+			not-null="true" />
+		<property name="pdcdate" column="PDCDATE" type="date" 
+			not-null="true" />
+		<property name="packdate" column="PACKDATE" type="date" 
+			not-null="true" />
+			
+		<!-- 映射和ProductType之间的关联关系 -->
+		<many-to-one name="producttype" column="TYPE_ID" class="ProductType" 
+			not-null="true" lazy="false" property-ref="id"/>
+
+	</class>
+
+</hibernate-mapping>

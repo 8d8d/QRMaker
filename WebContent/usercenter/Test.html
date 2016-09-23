@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+$(function(){
+	$.get("Test.action",function(data,status){
+		var msg = JSON.parse(data);
+		alert(msg);
+		alert(msg.key1);
+		alert(msg.length);
+	});
+});
+</script>
+
+
+
+</body>
+</html>

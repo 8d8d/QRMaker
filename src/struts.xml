@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定Struts2配置文件的DTD信息 -->
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<!-- Struts2配置文件的根元素 -->
+<struts>
+	<!-- 配置了系列常量 -->
+	
+	<package name="default" extends="struts-default" namespace="">
+		<action name="Register"
+			class="com.kesheng.QRMaker.action.RegisterAction">
+			<result name="success">success.html</result>
+			<result name="error">fail.html</result>
+		</action>
+		
+		<action name="Login"
+			class="com.kesheng.QRMaker.action.LoginAction">
+			<result name="login" type="redirect">pages/usercenter.html</result>
+			<result name="error" type="redirect">login.html</result>
+		</action>
+		
+		<action name="Logout"
+			class="com.kesheng.QRMaker.action.LogoutAction">
+			<result name="success" type="redirect">login.html</result>
+		</action>
+		
+		<action name="Test"
+			class="com.kesheng.QRMaker.action.TestAction">
+		</action>
+		
+	</package>
+</struts>
