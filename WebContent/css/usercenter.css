@@ -105,12 +105,22 @@
 		background-color: #449f4f;
 	}
 
+#work {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+#work h4 {
+	color: blue;
+}
+
 /* Contact */
 
 	#contact {
 		padding-bottom: 0;
 		overflow: hidden;
 	}
+
 
 /* Footer */
 
@@ -190,6 +200,7 @@ article{
 	width: 100%;
 	margin-left: 5px;
 }
+
 .calendar { 
 	width: 160px; 
 	background-color: #ededef; 
