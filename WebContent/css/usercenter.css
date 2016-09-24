@@ -55,10 +55,10 @@
 
 	form textarea {
 		min-height: 8em;
-		margin-left: 15px;
-		margin-right: 20px;
+/*		margin-left: 10px;
+		margin-right: 10px;*/
 		/*resize:none;*/ 
-		max-width: 97.5%;
+		max-width: 100%;
 
 	}
 	form .formerize-placeholder,
@@ -114,9 +114,10 @@
 		position: relative;
 		height: 5em;
 		line-height: 5em;
+		width: 100%；
 		margin: 0;
-		margin-left: -30px;
-		margin-right: -30px;
+/*		margin-left: 0px;
+		margin-right: 0px;*/
 		background: #39454b;
 		color: #999;
 		color: rgba(185, 186, 187, 0.5);
@@ -133,6 +134,7 @@
 		}
 
 		#footer .menu li {
+			    text-align: right;
 				font-size: 0.9em;
 			}
 
@@ -180,8 +182,8 @@ article{
 	margin-left: -45px;
 	margin-right: -45px;
 }
-section div{
-	data-spy="scroll";
+#page-wrapper ul {
+	width: 100%;
 }
 .calendar { 
 	width: 160px; 
