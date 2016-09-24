@@ -23,14 +23,15 @@ table{
 th{
 	background-color: #7b8b8a;
 	color:black;
+	font-size: 1.3em;
 }
 table,thead,tbody,th,td,tr{
 	border:solid 2px #ccc3c3;
 }
-/*caption{
-	font-size: 1.5em;
-	color: black;
-}*/
+th,td {
+	text-align:center;
+}
+
 #page-wrapper input[type="submit"]  {
   /*line-height:40px;*/
 /*  height:35px;
@@ -91,6 +92,8 @@ table,thead,tbody,th,td,tr{
 	color:black;
 	font-family: ；
 	font-weight:bold;
+	border-bottom-style: double;
+	border-bottom-width: 0.2em;
 	border-bottom-color: #bacaca; 
 }
 #page-wrapper h1{
@@ -98,7 +101,13 @@ table,thead,tbody,th,td,tr{
 	font-family: "宋体";
 	font-weight:bold;
 }
-#page-wrapper .steps h3{
-	border-bottom-color: #bacaca;
+#page-wrapper hr{
+	color: #bacaca;
 }
 
+hr {
+	color: #bacaca;
+	background-color: #bacaca;
+	border-top:1px solid #bacaca;
+	align: left;
+}
