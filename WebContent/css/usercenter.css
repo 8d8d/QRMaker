@@ -5,12 +5,16 @@
 #nav ul li{
 	display: inline;
 }
-#nav nav-pills{
+#nav ul li:hover {
+	background-color: #bacaca;
+}
+/*#nav nav-pills{
 	width: 100px;
 }
 #nav nav-pills.affix{
 	top:0px;
-}
+}*/
+
 /* Form */
 
 	form label {
@@ -184,6 +188,7 @@ article{
 }
 #page-wrapper ul {
 	width: 100%;
+	margin-left: 5px;
 }
 .calendar { 
 	width: 160px; 
