@@ -180,7 +180,9 @@ article{
 	margin-left: -45px;
 	margin-right: -45px;
 }
-
+section div{
+	data-spy:scroll;
+}
 .calendar { 
 	width: 160px; 
 	background-color: #ededef; 
