@@ -5,11 +5,11 @@
 	font-size: 1.5em;
 	color:black;
 }
-form input[type="submit"] {
+/*form input[type="submit"].input[type="button"] {
 	position: relative;
 	padding-left:50%;
 	
-}
+}*/
 #page-wrapper{
 	background-color: #e5ecec;
 	background-image: url(../img/user2.png);
@@ -32,7 +32,7 @@ th,td {
 	text-align:center;
 }
 
-#page-wrapper input[type="submit"]  {
+#page-wrapper input[type="submit"],input[type="button"]  {
   /*line-height:40px;*/
 /*  height:35px;
   width:65px;
