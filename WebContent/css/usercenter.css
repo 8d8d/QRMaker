@@ -105,15 +105,6 @@
 		background-color: #449f4f;
 	}
 
-#work {
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 30px;
-}
-#work h4 {
-	color: blue;
-}
-
 /* Contact */
 
 	#contact {
@@ -172,15 +163,6 @@ article{
 #contact {
 	background-color: #e9f2f4;
 }		
-#intro {
-	/*background-color:#adeef7;*/
-	background-image: url(../img/bgimg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top: 10px;
-	margin-top: -20px;
-
-}
 #top{
 	background-color: #bacaca;
 }

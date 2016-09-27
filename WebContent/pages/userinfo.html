@@ -45,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="usercenter.html"><p>个人中心</p></a>
+                 <a id="user" class="navbar-brand" href="addorder.html"><p>二维码生成平台</p></a>
             </div>
             <!-- /.navbar-header -->
 
@@ -165,32 +165,23 @@
                             </div>
                             <!-- /input-group -->
                         </li>
+                       <li >
+                            <a href="addorder.html"><i class="fa fa-edit fa-fw"></i> 创建二维码订单</a>
+                        </li>
                         <li>
-                            <a href="usercenter.html"><i class="fa fa-home fa-fw"></i> 首页</a>
-                        </li>  
+                                <a href="historyorder.html"><i class="glyphicon glyphicon-th-list"></i> 历史二维码记录</a>
+                        </li> 
+                        <li>
+                                <a href="questions.html"><i class="glyphicon glyphicon-question-sign"></i> 常见问题与反馈</a>
+                        </li>                    
                         <li >
-                            <a href="#"><i class="fa fa-edit fa-fw"></i> 二维码订单<span class="fa arrow"></span></a>
+                            <a href="#"><i class="glyphicon glyphicon-wrench"></i> 用户信息设置<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                              <li>
-                                    <a href="addorder.html">创建订单</a>
+                                    <a href="userinfo.html">账号信息设置</a>
                              </li>
                                 <li>
-                                    <a href="historyorder.html">查看订单</a>
-                                </li>                               
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>                   
-                        <li >
-                            <a href="#"><i class="fa fa-gear fa-fw"></i> 设置<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                             <li>
-                                    <a href="setting.html">用户配置</a>
-                             </li>
-                             <li>
-                                    <a href="userinfo.html">账号设置</a>
-                             </li>
-                                <li>
-                                    <a href="passwordchange.html">修改密码</a>
+                                    <a href="passwordchange.html">账号密码修改</a>
                                 </li>                               
                             </ul>
                             <!-- /.nav-second-level -->
@@ -207,30 +198,30 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">账号设置</h1>
+                        <h1 class="page-header">账号信息设置</h1>
         <form class="form-horizontal">
         <fieldset>
             <div class="form-group">
              <label class="col-sm-2 control-label" for="com_admin">用户名：</label>
-             <div class="col-sm-2">
+             <div class="col-sm-3">
              <input type="text" id="com_admin" class="form-control">
             </div>
             </div>
             <div class="form-group">
               <label class="col-sm-2 control-label" for="com_name">公司名称：</label>
-              <div class="col-sm-2">
+              <div class="col-sm-3">
               <input type="text" id="com_name" class="form-control">
               </div>
              </div>
             <div class="form-group">   
               <label class="col-sm-2 control-label" for="com_code">企业代码：</label>
-              <div class="col-sm-2">
+              <div class="col-sm-3">
               <input type="text" id="com_code" class="form-control">
               </div>
               </div>
             <div class="form-group">  
                <label class="col-sm-2 control-label" for="com_email">邮箱：</label>
-               <div class="col-sm-2">
+               <div class="col-sm-3">
                <input type="email" id="com_email" class="form-control">
               </div>  
               </div>
