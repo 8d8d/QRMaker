@@ -5,26 +5,39 @@ body {
 	font-family: "宋体", serif;
     color: #1c1a19;
 	}
-	
+.container {
+	/*background-image: url(../img/index2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: "宋体", serif;
+    color: #1c1a19;*/
+    margin-top: 0px;
+    width:100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+}
 h1 {
 	font-family: "华文新魏";
 	padding-bottom: 20px;
-	padding-top-top: 0px;
+	margin-top: 0px;
     font-size: 50px;
-    padding: 20px 0px 10px 10px;
+    padding: 15px 0px 5px 10px;
 	display: block;
 	border-bottom:none;
 	/*margin: -10px -15px 30px 0px;*/
 	text-align: left;
-	color: black;
+	color:#2b4cf4;
+	background-color: white;
+	margin-bottom: 0px;
+	width:100%;
+	white-space:nowrap;
 }
 body h3{
 	font-family: "华文新魏"；
 }
 footer{
-	text-align: center;
-	font-family: Times New Roman;
-	margin-top: 40px;
+
 }
 #login{
 	background-color: #39a4f9;
@@ -32,3 +45,15 @@ footer{
 #login:hover{
 	background-color: #2792e7;
 }
+#lfooter {
+		text-align: center;
+		font-family: Times New Roman;
+		position: relative;
+		/*height: 5em;*/
+		line-height: 5em;
+		width: 100%；
+		margin: 0;
+		color: black;
+		overflow: hidden;
+		
+	}

@@ -2,7 +2,7 @@
 	background-color: #bacaca;
 }
 #top p{
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color:black;
 }
 /*form input[type="submit"].input[type="button"] {
@@ -10,6 +10,9 @@
 	padding-left:50%;
 	
 }*/
+#side-menu {
+	font-size: 1.5em;
+}
 #page-wrapper{
 	background-color: #e5ecec;
 	background-image: url(../img/user2.png);
