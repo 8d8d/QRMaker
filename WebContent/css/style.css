@@ -17,12 +17,12 @@
 }
 #page-wrapper h1{
 	text-align: left;
-	color: black;
+	color: #222222;
 }
 
 #page-wrapper h3 {
 	font-size: 22px;
-    font-weight: 300;
+    font-weight: 800;
     color:orange;
     line-height: 30px;
 

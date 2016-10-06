@@ -15,6 +15,9 @@
 	text-decoration: none;
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
+#page-wrapper{
+	background-color: white;
+}
 #page-wrapper ol, ul {
 		list-style: none;
 	}
@@ -103,7 +106,7 @@
 		-webkit-transition: all 0.2s ease-in-out;
 		-ms-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
-		background-color: #98c593;
+		background-color:#449f4f;
 		border: 0;
 		border-radius: 3.5em;
 		color: white;
@@ -122,7 +125,8 @@
 		font-size:1.4em;
 	}
 	input[type="submit"]:hover{
-		background-color: #449f4f;
+		background-color: #98c593 ;
+		/*color:black;*/
 	}
 
 /* Contact */
@@ -168,6 +172,7 @@ header h2{
 	margin-left: 3%;
 	font-family: " 黑体";
 	font-weight: 900;
+	color: #222222;
 }
 article{
 	text-align: left;
