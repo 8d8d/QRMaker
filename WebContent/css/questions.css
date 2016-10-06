@@ -10,8 +10,10 @@
 	color:orange;
 	font-family: "微软雅黑";
 }
-a {
-	color: black;
+ a:hover, a:focus {
+	color: orange;
+	text-decoration: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
 #page-wrapper ol, ul {
 		list-style: none;

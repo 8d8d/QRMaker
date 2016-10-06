@@ -10,8 +10,10 @@
 	color:orange;
 	font-family: "微软雅黑";
 }
-a {
-	color: black;
+ a:hover, a:focus {
+	color: orange;
+	text-decoration: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
 /*form input[type="submit"].input[type="button"] {
 	position: relative;
@@ -26,9 +28,10 @@ a {
 	border-color: orange;
 }
 #page-wrapper{
-	background-color: #e5ecec;
-	background-image: url(../img/user2.png);
-	background-size: cover;
+	/*background-color: #e5ecec;*/
+	/*background-image: url(../img/user2.png);*/
+	/*background-size: cover;*/
+	background-color: white;
 }
 
 table{
@@ -81,22 +84,24 @@ th,td {
 }
 
 #page-wrapper .edit {
-	background-color:#98c593 ;
+	background-color:#449f4f;
 }
 #page-wrapper .edit:hover{
-  background-color:#449f4f;
+  background-color:#98c593 ;
 }
 #page-wrapper .save {
-	background-color:#98c593;
+	background-color:#449f4f;
 }
 #page-wrapper .save:hover{
-  background-color: #449f4f;
+  background-color: #98c593;
+  color: black;
 }
 #page-wrapper .cancel {
-	background-color:#babebf;
+	background-color:#9f989a;
 }
 #page-wrapper .cancel:hover{
-  background-color:#9f989a;
+  background-color:#babebf;
+  color: black;
 }
 .page-header{
 	color:black;

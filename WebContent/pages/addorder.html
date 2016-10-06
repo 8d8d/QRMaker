@@ -23,6 +23,10 @@
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="../css/setting.css">
+
+<!-- 分步样式 -->
+    <link rel="stylesheet" href="../css/form-elements.css"><!-- 关键 -->
+    <link rel="stylesheet" href="../css/style.css"><!-- 样式 -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -195,64 +199,159 @@
 
         <!-- Page Content -->
         <div id="page-wrapper">
-            <div class="container-fluid">
-                <div class="row">
+            <!-- <div class="container-fluid">
+                <div class="row"> -->
                     <div class="col-lg-12">
-                        <h1 class="page-header">生成订单二维码</h1>   
-                    </div>
-             
- <form action="#" method="post">
-	<div id="wizard">
-		<ul id="status">
-			<li class="active"><strong>1.</strong>选择农药种类</li>
-			<li><strong>2.</strong>填写规格产量</li>
-			<li><strong>3.</strong>编辑文本信息</li>
-			<li><strong>4.</strong>生成二维码</li>
-		</ul>
+                        <h1 class="page-header"><b>生成订单二维码</b></h1>   
+                    </div>           
+ <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-2">
+                        	
+                        	<form role="form" action="" method="post" class="registration-form">
+                        		
+                        		<fieldset>
+		                        	<div class="form-top">
+		                        		<div class="form-top-left">
+		                        			<h3>Step 1 / 4 &#160;&#160;&#160;选择农药种类</h3>
+		                            		
+		                        		</div>
+<!-- 		                        		<div class="form-top-right">
+		                        			<i class="fa fa-user"></i>
+		                        		</div> -->
+		                            </div>
+		                            <div class="form-bottom">
+				                    	<div class="form-group">
+				                    	<label class="col-sm-3 control-label" for="pro_name">农药名称：</label>
+				                        <div class="col-sm-6">
+        								 <input type="text" id="pro_name" class="form-control">
+      								   </div>
+				                       </div>
+				                       <br><br>
+									<div class="form-group">
+    						        <label class="col-sm-3 control-label" for="pro_code">农药代码：</label>
+      							     <div class="col-sm-6">
+      							      <input type="text" id="pro_code" class="form-control">
+      							     </div>
+      							    </div>
+      							    <br><br>
+				                   <div class="form-group">
+                                   <label class="col-sm-3 control-label" for="pro_id">所属种类：</label>
+                                   <div class="col-sm-6">
+                                   <input type="text" id="pro_id" class="form-control">
+                                    </div>  
+                                    </div> 
+                                    <br><br>                               
+				                      <button type="button" class="btn btn-next">下一步</button>
+				                    </div>
+			                    </fieldset>
+			                    
+			                    <fieldset>
+		                        	<div class="form-top">
+		                        		<div class="form-top-left">
+		                        			<h3>Step 2 / 4 &#160;&#160;&#160;填写规格产量</h3>	
+		                        		</div>
+		                        		<!-- <div class="form-top-right">
+		                        			<i class="fa fa-key"></i>
+		                        		</div> -->
+		                            </div>
+		                            <br>
+		                        <div class="form-bottom">
+		                         <div class="form-group">
+        							 <label class="col-sm-3 control-label" for="plan_norm">农药规格：</label><span>ml</span>
+        							 <div class="col-sm-6">
+        							 <input type="number" id="plan_norm" class="form-control">
+        								</div>
+      								  </div>
+      								 <br>
+    						    <div class="form-group">
+     						    <label class="col-sm-3 control-label" for="plan_packagenum">包装容量：</label><span>/箱</span>
+     						    <div class="col-sm-6 input-append"> 
+     						    <input class="span2 form-control" id="plan_packagenum" type="number">
+      							   </div>
+      							  </div>
+      							  <br>
+      							  <div class="form-group">
+      						   <label class="col-sm-3 control-label" for="plan_yield">农药产量：</label><span>箱（桶）</span>
+       						  <div class="col-sm-6">
+       						     <input class="form-control" id="plan_yield" type="number">
+                   				</div>
+      						    </div>
+      						    <br>
+				                        <button type="button" class="btn btn-previous">上一步</button>
+				                        <button type="button" class="btn btn-next">下一步</button>
+				                    </div>
+			                    </fieldset>
+			                    
+			                    <fieldset>
+		                        	<div class="form-top">
+		                        		<div class="form-top-left">
+		                        			<h3>Step 3 / 4 &#160;&#160;&#160;编辑文本信息</h3>
+		                        		</div>
+		                        		<!-- <div class="form-top-right">
+		                        			<i class="fa fa-key"></i>
+		                        		</div> -->
+		                            </div>
+		                           <div class="form-bottom">
+		                            <div class="form-group">
+      							   <label class="col-sm-3 control-label" for="text">固定文本：</label>
+      							   <div class="col-sm-6"> 
+        							 <textarea id="text"  class="form-control" ></textarea>
+        							 </div>
+       								 </div>
+       								 <br><br><br>
+      							   <div class="form-group">
+      							   <label class="col-sm-3 control-label" for="link">网页链接：</label>
+      							   <div class="col-sm-6"> 
+       								  <textarea id="link"  class="form-control" ></textarea>
+       								  </div>
+      								  </div> 
+      								  <br><br><br><br>
+				                        <button type="button" class="btn btn-previous">上一步</button>
+				                        <button type="button" class="btn btn-next">下一步</button>
+				                    </div>
+			                    </fieldset>
 
-		<div class="items">
-			<div class="page">
-        		<p><label class="col-sm-2">农药名称：</label><input type="text" id="pro_name" class="col-sm-2"></p><br><br>
-          		 <p><label class="col-sm-2">农药代码：</label><input type="text" id="pro_code" class="col-sm-2"></p><br><br>
-        	      <p><label class="col-sm-2">所属种类：</label><input type="text" id="pro_id" class="col-sm-2"></p><br><br>
-               <div class="btn_nav">
-                  <input type="button" class="next" value="下一步&raquo;">
-               </div>
+			                    <fieldset>
+		                        	<div class="form-top">
+		                        		<div class="form-top-left">
+		                        			<h3>Step 4 / 4 &#160;&#160;&#160;生成二维码</h3>
+		                        		</div>
+		                        		<!-- <div class="form-top-right">
+		                        			<i class="fa fa-twitter"></i>
+		                        		</div> -->
+		                            </div>
+		                            <div class="form-bottom">
+		                           <p>二维码预览</p>
+		                           <img src="../img/QRpic.png">
+		                           <br>
+		                           <br>
+				                        <button type="button" class="btn btn-previous">上一步</button>
+				                        <button type="submit" class="btn">存为PDF</button>
+				                        <button type="submit" class="btn">存为PIC</button>
+				                    </div>
+			                    </fieldset>
+		                    
+		                    </form>
+		                    
+                        </div>
+                    </div>
+                </div>
             </div>
-			<div class="page">
-           	 <p><label class="col-sm-2">农药规格：</label><input type="number" id="plan_norm" class="col-sm-2"><span>ml</span></p><br><br>   
-           	 <p><label class="col-sm-2">包装容量：</label><input class="col-sm-2" id="plan_packagenum" type="number"><span>/箱</span></p><br><br>
-             <p><label class="col-sm-2">产量：</label> <input class="col-sm-2" id="plan_yield" type="number"><span>箱（桶）</span></p><br><br>   <div class="btn_nav">
-                  <input type="button" class="prev" style="float:left" value="&laquo;上一步">
-                  <input type="button" class="next" value="下一步&raquo;">
-               </div>
-            </div>
-            <div class="page">
-               <p><label class="col-sm-2">固定文本：</label><textarea id="text"  class="col-sm-2" rows="2"></textarea></p><br><br>
-        	   <p><label class="col-sm-2">网页链接：</label><textarea id="link"  class="col-sm-2" rows="2"></textarea></p><br><br>
-               <div class="btn_nav">
-                  <input type="button" class="prev" style="float:left" value="&laquo;上一步">
-                  <input type="button" class="next" value="下一步&raquo;">
-               </div>
-            </div>
-			<div class="page">
-               <h4>二维码预览</h4>
-               <p>请点击“确定”按钮完成注册。</p>
-               <br>
-               <br>
-               <br>
-               <div class="btn_nav">
-                  <input type="button" class="prev" style="float:left" value="&laquo;上一步">
-                  <input type="button" class="next" id="sub" value="确定">
-               </div>
-            </div>
-		</div>
-	</div>
-</form>
-               <!-- /.row -->
-            </div>
-            <!-- /.container-fluid -->          
+            
         </div>
+
+
+
+
+
+<!--             </div>
+            /.container-fluid          
+        </div> -->
         <!-- /#page-wrapper -->
   <!-- <img src="../img/QRpic.png" style="margin-left: 40%;margin-top:20px;margin-bottom:30px;">  -->
     </div>
@@ -273,7 +372,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
      <!-- 分步订单 -->
-<script type="text/javascript" src="../js/scrollable.js"></script>
+   <script src="../js/scripts.js"></script>
+  <script src="../js/jquery.backstretch.min.js"></script>
 </body>
 
 </html>
