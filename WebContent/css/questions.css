@@ -1,17 +1,19 @@
+body {
+	 font-family: 'Roboto', sans-serif;
+	 color: #555;
+	 font-weight: 100;
+}
 #top{
-	/*background-color: #bacaca;*/
 	background-color:#fafafb;
 	border-bottom-width: 1.0em;
-	border-bottom-color: orange;
+	border-bottom-color: #2b4cf4;
 	margin-bottom: 0;
 }
-#top p {
-	font-size: 1.8em;
-	color:orange;
-	font-family: "微软雅黑";
+.hmenu {
+	padding-top: 0.5em;
 }
  a:hover, a:focus {
-	color: orange;
+	color: #E95B39;
 	text-decoration: none;
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
@@ -30,13 +32,10 @@
 #side-menu {
 	font-size: 1.5em;
 	border-top-width: 1.0em;
-	margin-top: 4.0em;
-	/*background-color: white;*/
-	border-color: orange;
+	margin-top: 5.0em;
+	border-color: #2b4cf4;
 }
-/*#side-menu ul li a {
-	color: orange;
-}*/
+
 
 /* Form */
 
@@ -82,9 +81,6 @@
 
 	form textarea {
 		min-height: 8em;
-/*		margin-left: 10px;
-		margin-right: 10px;*/
-		/*resize:none;*/ 
 		max-width: 100%;
 
 	}
@@ -106,7 +102,7 @@
 		-webkit-transition: all 0.2s ease-in-out;
 		-ms-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
-		background-color:#449f4f;
+		background-color:#19b9e7;
 		border: 0;
 		border-radius: 3.5em;
 		color: white;
@@ -125,7 +121,7 @@
 		font-size:1.4em;
 	}
 	input[type="submit"]:hover{
-		background-color: #98c593 ;
+		background-color: #08E7E7 ;
 		/*color:black;*/
 	}
 
@@ -134,6 +130,7 @@
 	#contact {
 		padding-bottom: 0;
 		overflow: hidden;
+		background-color: #e9f2f4;
 	}
 
 
@@ -170,9 +167,14 @@
 header h2{
 	position: relative;
 	margin-left: 3%;
-	font-family: " 黑体";
+/*	font-family: 'Roboto', sans-serif;*/
 	font-weight: 900;
-	color: #222222;
+	color: #555;
+	font-size: 28px;
+}
+.panel-title. .panel-body {
+	color: #555;
+	/*font-weight: bolder;*/
 }
 article{
 	text-align: left;
@@ -185,10 +187,6 @@ article{
 	text-indent: 35px;
 	text-align:justify ;
 }
-#contact {
-	background-color: #e9f2f4;
-}		
-
 
 #page-wrapper .row {
 	padding: 0px;
@@ -199,7 +197,6 @@ article{
 	width: 100%;
 	margin-left: 5px;
 }
-
 .calendar { 
 	margin-left: 15%;
 	width: 160px; 

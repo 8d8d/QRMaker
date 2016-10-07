@@ -25,7 +25,6 @@
     <link rel="stylesheet" type="text/css" href="../css/setting.css">
 
 <!-- 分步样式 -->
-    <link rel="stylesheet" href="../css/form-elements.css"><!-- 关键 -->
     <link rel="stylesheet" href="../css/style.css"><!-- 样式 -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,17 +42,14 @@
         <!-- Navigation -->
         <nav id="top" class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a id="user" class="navbar-brand" href="addorder.html"><p>二维码生成平台</p></a>
+                <div id="header">
+                    <a href="addorder.html"><img src="../img/head1.png"></a>
+                </div>
+
             </div>
             <!-- /.navbar-header -->
 
-            <ul class="nav navbar-top-links navbar-right">
+            <ul class="nav navbar-top-links navbar-right hmenu">
                 </li>
                 <!-- /.dropdown -->
                 <li class="dropdown">
@@ -136,16 +132,11 @@
                 </li>
 
                 <!-- /.dropdown -->
-                <li class="dropdown">
+                <li class="dropdown hmenu">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-<!--                         <li><a href="userinfo.html"><i class="fa fa-user fa-fw"></i>个人信息</a>
-                        </li> -->
-<!--                         <li><a href="setting.html"><i class="fa fa-gear fa-fw"></i> 设置</a>
-                        </li>
-                        <li class="divider"></li> -->
                         <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> 退出</a>
                         </li>
                     </ul>
@@ -231,21 +222,21 @@
         								 <input type="text" id="pro_name" class="form-control">
       								   </div>
 				                       </div>
-				                       <br><br>
+				                       <!-- <br><br> -->
 									<div class="form-group">
     						        <label class="col-sm-3 control-label" for="pro_code">农药代码：</label>
       							     <div class="col-sm-6">
       							      <input type="text" id="pro_code" class="form-control">
       							     </div>
       							    </div>
-      							    <br><br>
+      							   <!--  <br><br> -->
 				                   <div class="form-group">
                                    <label class="col-sm-3 control-label" for="pro_id">所属种类：</label>
                                    <div class="col-sm-6">
                                    <input type="text" id="pro_id" class="form-control">
                                     </div>  
                                     </div> 
-                                    <br><br>                               
+                                    <!-- <br><br>  -->                              
 				                      <button type="button" class="btn btn-next">下一步</button>
 				                    </div>
 			                    </fieldset>
@@ -259,7 +250,6 @@
 		                        			<i class="fa fa-key"></i>
 		                        		</div> -->
 		                            </div>
-		                            <br>
 		                        <div class="form-bottom">
 		                         <div class="form-group">
         							 <label class="col-sm-3 control-label" for="plan_norm">农药规格：</label><span>ml</span>
@@ -267,21 +257,21 @@
         							 <input type="number" id="plan_norm" class="form-control">
         								</div>
       								  </div>
-      								 <br>
+      								<!--  <br> -->
     						    <div class="form-group">
      						    <label class="col-sm-3 control-label" for="plan_packagenum">包装容量：</label><span>/箱</span>
      						    <div class="col-sm-6 input-append"> 
      						    <input class="span2 form-control" id="plan_packagenum" type="number">
       							   </div>
       							  </div>
-      							  <br>
+      							  <!-- <br> -->
       							  <div class="form-group">
       						   <label class="col-sm-3 control-label" for="plan_yield">农药产量：</label><span>箱（桶）</span>
        						  <div class="col-sm-6">
        						     <input class="form-control" id="plan_yield" type="number">
                    				</div>
       						    </div>
-      						    <br>
+      						    <!-- <br> -->
 				                        <button type="button" class="btn btn-previous">上一步</button>
 				                        <button type="button" class="btn btn-next">下一步</button>
 				                    </div>
@@ -303,14 +293,14 @@
         							 <textarea id="text"  class="form-control" ></textarea>
         							 </div>
        								 </div>
-       								 <br><br><br>
+       								 <br><br>
       							   <div class="form-group">
       							   <label class="col-sm-3 control-label" for="link">网页链接：</label>
       							   <div class="col-sm-6"> 
        								  <textarea id="link"  class="form-control" ></textarea>
        								  </div>
       								  </div> 
-      								  <br><br><br><br>
+      								<br><br>
 				                        <button type="button" class="btn btn-previous">上一步</button>
 				                        <button type="button" class="btn btn-next">下一步</button>
 				                    </div>
@@ -326,7 +316,7 @@
 		                        		</div> -->
 		                            </div>
 		                            <div class="form-bottom">
-		                           <p>二维码预览</p>
+		                           <p>二维码图片预览</p>
 		                           <img src="../img/QRpic.png">
 		                           <br>
 		                           <br>

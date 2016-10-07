@@ -33,7 +33,9 @@
 </head>
 
 <body>
-	<h1>二维码生成平台</h1>
+<div id="header">
+	<img src="img/head.png">
+	</div>
 	<div class="container">
 		<div class="row" id="page">
 			<div class="col-md-3 col-md-offset-7">
@@ -58,7 +60,7 @@
 								
 								<!-- Change this to a button or input when using this as a form -->
 								<input type="submit" value="登录" class="btn btn-lg btn-success btn-block" id="login"/>
-								<a href="#" data-toggle="modal" data-target="#resign" text-align="rignt">新用户注册</a>
+								<a href="#" data-toggle="modal" data-target="#resign">新用户注册</a>
 							</fieldset>
 							</form>
 						</div>
@@ -78,22 +80,40 @@
 					<form role="form" action="Register" method="post">
 					<fieldset>
 						<div class="form-group">
-							<input class="form-control" placeholder="用户名，字母与数字组合，8~12位" name="admin" type="text" autocomplete="off" autofocus>
+						    <label class="col-sm-3 control-label" for="admin">用户名：</label>
+						    <div class="col-sm-9">
+                             <input type="text" class="form-control" placeholder="字母与数字组合，8~12位" name="" autocomplete="off" autofocus>
+							</div>
+						   </div>
+						<div class="form-group">
+						<label class="col-sm-3 control-label" for="name">公司名称：</label>
+						    <div class="col-sm-9">
+							<input class="form-control"  name="name" type="text" autocomplete="off">
+							</div>
 						</div>
 						<div class="form-group">
-							<input class="form-control" placeholder="公司名称" name="name" type="text" autocomplete="off" value="">
+						    <label class="col-sm-3 control-label" for="id">企业代码：</label>
+						    <div class="col-sm-9">
+							<input class="form-control" name="id" type="text" autocomplete="off">
+						  </div>
 						</div>
 						<div class="form-group">
-							<input class="form-control" placeholder="企业代码" name="id" type="text" autocomplete="off" value="">
+						<label class="col-sm-3 control-label" for="email">邮箱：</label>
+						    <div class="col-sm-9">
+							<input class="form-control" name="email" type="email" autocomplete="off">
+							</div>
 						</div>
 						<div class="form-group">
-							<input class="form-control" placeholder="邮箱" name="email" type="email" autocomplete="off" value="">
+						<label class="col-sm-3 control-label" for="password">设置密码：</label>
+						   <div class="col-sm-9">
+							<input class="form-control" placeholder="字母与数字组合，8~12位" name="password" type="password" autocomplete="off">
+							</div>
 						</div>
 						<div class="form-group">
-							<input class="form-control" placeholder="密码，字母与数字组合，8~12位" name="password" type="password" autocomplete="off" value="">
-						</div>
-						<div class="form-group">
-							<input class="form-control" placeholder="确认密码" name="password2" type="password" autocomplete="off" value="">
+						<label class="col-sm-3 control-label" for="password2">确认密码：</label>
+						    <div class="col-sm-9">
+							<input class="form-control" name="password2" type="password" autocomplete="off">
+							</div>
 						</div>
 					</fieldset>
 					<div>

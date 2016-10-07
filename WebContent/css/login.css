@@ -2,42 +2,24 @@ body {
 	background-image: url(../img/index2.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	font-family: "宋体", serif;
-    color: #1c1a19;
+	font-family: 'Roboto', sans-serif;
+    color: #555;
 	}
 .container {
-	/*background-image: url(../img/index2.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-family: "宋体", serif;
-    color: #1c1a19;*/
     margin-top: 0px;
     width:100%;
     padding-top: 30px;
     padding-bottom: 30px;
    
 }
-h1 {
-	font-family: "华文新魏";
-	padding-bottom: 20px;
-	margin-top: 0px;
-    font-size: 50px;
-    padding: 15px 0px 5px 10px;
-	display: block;
-	border-bottom:none;
-	/*margin: -10px -15px 30px 0px;*/
-	text-align: left;
-	color:#2b4cf4;
+#page a{
+	color: #6F6F6F;
+}
+#header {
 	background-color: white;
-	margin-bottom: 0px;
-	width:100%;
-	white-space:nowrap;
 }
-body h3{
-	font-family: "华文新魏"；
-}
-footer{
-
+#page h2 {
+    font-weight: 600;
 }
 #login{
 	background-color: #39a4f9;
@@ -59,4 +41,25 @@ footer{
 	}
 #resign {
 	margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100; 
+}
+#resign .form-group  {
+      padding-top: 15px;
+      padding-bottom:15px;
+      text-align: right; 
+      
+}
+#resign  .form-group label {
+	font-family: 'Roboto', sans-serif;
+    font-weight: 550; 
+    color: #555;
+}
+#resign input[type="submit"]{
+	margin-top: 20px;
+}
+.modal-title {
+	font-family: 'Roboto', sans-serif;
+    font-weight: 600; 
+    color: #555;
 }
