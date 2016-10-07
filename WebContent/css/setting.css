@@ -133,3 +133,8 @@ hr {
 /*	font-weight: 100px;
 	color: #555;*/
 }
+.form-group {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

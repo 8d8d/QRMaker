@@ -160,7 +160,10 @@ form.registration-form fieldset {
 
 }
 .form-group {
-	padding: 1.0em 0px;
+	padding: 0.5em 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 @media (max-width: 415px) {
 	
