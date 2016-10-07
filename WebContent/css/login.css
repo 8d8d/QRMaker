@@ -47,13 +47,18 @@ body {
 #resign .form-group  {
       padding-top: 15px;
       padding-bottom:15px;
-      text-align: right; 
+       
+/*      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;*/
+/*      display: block-inline;*/
       
 }
 #resign  .form-group label {
 	font-family: 'Roboto', sans-serif;
     font-weight: 550; 
     color: #555;
+    text-align: right;
 }
 #resign input[type="submit"]{
 	margin-top: 20px;
