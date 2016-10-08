@@ -2,13 +2,17 @@
 #page-wrapper input[type="text"],
 #page-wrapper input[type="number"], 
 textarea, 
-textarea.form-control {
+textarea.form-control,
+ #develop input[type="text"],
+ #develop input[type="number"], 
+textarea, 
+textarea.form-control,{
 	height: 2.0em;
     margin: 0;
     padding: 0 10px;
     vertical-align: middle;
     background: #f8f8f8;
-    border: 2px solid #A2A2A2;
+    border: 1px solid #A2A2A2;
     font-family: 'Roboto', sans-serif;
     font-size: 1.0em;
     font-weight: 300;
@@ -30,14 +34,18 @@ textarea.form-control {
 
 #page-wrapper input[type="text"]:focus, 
 textarea:focus, 
-textarea.form-control:focus {
+textarea.form-control:focus,
+#develop input[type="text"]:focus, 
+#develop input[type="number"]:focus, 
+textarea:focus, 
+textarea.form-control:focus{
 	outline: 0;
 	background: #fff;
-    border: 3px solid #19b9e7;
+    border: 2px solid #19b9e7;
     -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
 }
 
-#page-wrapper button.btn {
+#page-wrapper button.btn ,#develop button.btn{
 	height: 40px;
 /*    margin: 0;
     padding: 0 ;*/
@@ -61,7 +69,7 @@ textarea.form-control:focus {
 
 #page-wrapper button.btn:focus { outline: 0; opacity: 0.6; background: #19b9e7; color: #fff; }
 
-#page-wrapper button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #19b9e7; color: #fff; }
+#page-wrapper button.btn:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #19b9e7; color: #fff; }
 
 /*style*/
 #page-wrapper {
@@ -136,7 +144,23 @@ form .form-bottom button.btn {
 form.registration-form fieldset {
 	display: none;
 }
+#develop .form-group {
+	margin-top: 1px;
+	margin-bottom: 1px;
 
+}
+#develop .btn{
+	margin-left: 50%;
+	background-color:#19b9e7;
+	border-color: inherit;
+}
+#develop .btn:hover{
+  background-color:#08E7E7;
+  border-color: inherit;
+}
+#develop .modal-title {
+	font-weight: 900;
+}
 /***** Media queries *****/
 
 @media (min-width: 992px) and (max-width: 1199px) {}

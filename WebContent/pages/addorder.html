@@ -199,7 +199,7 @@
         <div class="top-content">
         	
             <div class="inner-bg">
-                <div class="container">
+               <!--  <div class="container"> -->
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-2">
                         	
@@ -252,7 +252,7 @@
 		                            </div>
 		                        <div class="form-bottom">
 		                         <div class="form-group">
-        							 <label class="col-sm-3 control-label" for="plan_norm">农药规格：</label><span>ml</span>
+        							 <label class="col-sm-3 control-label" for="plan_norm">农药规格：</label><span>ml/瓶</span>
         							 <div class="col-sm-6">
         							 <input type="number" id="plan_norm" class="form-control">
         								</div>
@@ -268,7 +268,7 @@
       							  <div class="form-group">
       						   <label class="col-sm-3 control-label" for="plan_yield">农药产量：</label><span>箱（桶）</span>
        						  <div class="col-sm-6">
-       						     <input class="form-control" id="plan_yield" type="number">
+       						     <input class="form-control" id="plan_yield" type="number" placeholder="=总产量/包装容量">
                    				</div>
       						    </div>
       						    <!-- <br> -->
@@ -288,16 +288,16 @@
 		                            </div>
 		                           <div class="form-bottom">
 		                            <div class="form-group">
-      							   <label class="col-sm-3 control-label" for="text">固定文本：</label>
+      							   <label class="col-sm-3 control-label" for="qrpicture_fixtext">固定文本：</label>
       							   <div class="col-sm-6"> 
-        							 <textarea id="text"  class="form-control" ></textarea>
+        							 <textarea id="qrpicture_fixtext"  class="form-control" placeholder="二维码序列号"></textarea>
         							 </div>
        								 </div>
        								
       							   <div class="form-group">
-      							   <label class="col-sm-3 control-label" for="link">网页链接：</label>
+      							   <label class="col-sm-3 control-label" for="qrpicture_pagepath">网页链接：</label>
       							   <div class="col-sm-6"> 
-       								  <textarea id="link"  class="form-control" ></textarea>
+       								  <textarea id="qrpicture_pagepath"  class="form-control" placeholder="二维码查询网站网址"></textarea>
        								  </div>
       								  </div> 
       								
@@ -321,15 +321,14 @@
 		                           <br>
 		                           <br>
 				                        <button type="button" class="btn btn-previous">上一步</button>
-				                        <button type="submit" class="btn">存为PDF</button>
-				                        <button type="submit" class="btn">存为PIC</button>
+				                        <a href="#" data-toggle="modal" data-target="#develop"><button type="submit" class="btn">生成二维码</button></a>			                    
 				                    </div>
 			                    </fieldset>
 		                    
 		                    </form>
 		                    
                         </div>
-                    </div>
+                   <!--  </div> -->
                 </div>
             </div>
             
@@ -347,7 +346,93 @@
     </div>
     <!-- /#wrapper -->
 
-
+<!-- 保存二维码 -->
+    <div class="modal" id="develop">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h3 class="modal-title">二维码信息预览</h3>
+                </div>
+                <div class="modal-body">
+                    <form role="form" action="" method="post">
+        <fieldset>
+                  <div class="form-group">
+                 <label class="col-sm-3 control-label" for="pro_name">农药名称：</label>
+                  <div class="col-sm-7">
+                  <input type="text" id="pro_name" class="form-control">
+                  </div>
+                  </div>
+                  <!-- <br><br> -->
+                <div class="form-group">
+                <label class="col-sm-3 control-label" for="pro_code">农药代码：</label>
+                <div class="col-sm-7">
+                <input type="text" id="pro_code" class="form-control">
+                 </div>
+                 </div>
+                 <!--  <br><br> -->
+                 <div class="form-group">
+                 <label class="col-sm-3 control-label" for="pro_id">所属种类：</label>
+                 <div class="col-sm-7">
+                 <input type="text" id="pro_id" class="form-control">
+                 </div>  
+                 </div> 
+              <div class="form-group">
+              <label class="col-sm-3 control-label" for="plan_norm">农药规格：</label><span>ml/瓶</span>
+               <div class="col-sm-7">
+                <input type="number" id="plan_norm" class="form-control">
+                </div>
+                </div>                                   
+                <div class="form-group">
+                <label class="col-sm-3 control-label" for="plan_packagenum">包装容量：</label><span>/箱</span>
+                <div class="col-sm-7 input-append"> 
+                <input class="span2 form-control" id="plan_packagenum" type="number">
+                </div>
+                </div>
+                 <div class="form-group">
+                    <label class="col-sm-3 control-label" for="plan_yield">农药产量：</label><span>箱（桶）</span>
+                    <div class="col-sm-7">
+                    <input class="form-control" id="plan_yield" type="number" placeholder="=总产量/包装容量">
+                    </div>
+                    </div>
+                <div class="form-group">
+                     <label class="col-sm-3 control-label" for="qrpicture_fixtext">固定文本：</label>
+                     <div class="col-sm-7"> 
+                     <textarea id="text"  class="form-control" placeholder="二维码序列号"></textarea>
+                     </div>
+                     </div>
+                                    
+                     <div class="form-group">
+                     <label class="col-sm-3 control-label" for="link">网页链接：</label>
+                     <div class="col-sm-7"> 
+                     <textarea id="link"  class="form-control" placeholder="二维码查询网站网址"></textarea>
+                    </div>
+                     </div> 
+                <div class="form-group">
+                <label class="col-sm-3 control-label" for="qrpicture_filename">文件名：</label>
+                <div class="col-sm-7 input-append"> 
+                <input class="span2 form-control" id="qrpicture_filename" type="text">
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="col-sm-3 control-label" for="qrpicture_path">保存路径：</label>
+                <div class="col-sm-7 input-append"> 
+                <input class="span2 form-control" id="qrpicture_path" type="text">
+                </div>
+                </div>
+                 <div class=" form-group col-sm-4">
+                        <input type="submit" value="存为PDF" class="btn  btn-success">
+                        </div>
+                  <div class=" form-group col-sm-8">      
+                        <input type="submit" value="存为PIC" class="btn  btn-success">
+                    </div>
+                    </fieldset>
+                   
+                    </form> 
+                </div>
+            </div>
+        </div>                              
+    </div>
 
 
     <!-- jQuery -->
