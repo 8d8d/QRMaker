@@ -1,0 +1,24 @@
+body {
+	background-color: #FFFFFF;
+}
+img {
+	float: left;
+}
+.head-right {
+	font-weight: 900;
+	font-family: "黑体";
+	color: #35CE0F;
+	padding-left: 50px;
+	margin-top: -15px;
+}
+.login-panel {
+	padding-top:100px;
+	/*padding-left:40px;*/
+}
+.btn,.btn-small,input[type="button"] {
+	background-color: #EEEEEE;
+	border-radius: 4px;
+	height: 30px;
+	padding: 2px 7px 2px 7px;
+	color: blue;
+}
